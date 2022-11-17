@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	int datos[10];
+	int i,num,dua=0;
+	cout<<"Ingresa los elementos del arreglo:"<<endl;
+	
+	for(i=0;i<10;i++)
+	{
+    cout<<"Ingresa el numero: "<<i+1<<endl;
+	cin>>datos[i];
+		
+    }
+    cout<<"captura un numero: "<<endl;
+    cin>>num;
+    for(i=0;i<10;i++)
+    {
+	if(num==datos[i])
+    {
+    dua=1;
+    cout<<"El numero "<<num<<" se encuentra en la posicion "<<"["<<i<<"]"<<endl;
+    break;
+    }
+    else
+    {
+  	dua=0;
+       }
+  }
+  if(dua==1)
+  {
+  	cout<<"El numero"<<num<<"no se encuentra en el arreglo"<<endl;
+  }
+  
+
+}
